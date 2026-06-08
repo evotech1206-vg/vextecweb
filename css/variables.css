@@ -1,0 +1,52 @@
+/* ==========================================================================
+   VEXTEC DESIGN TOKENS & VARIABLES
+   ========================================================================== */
+
+:root {
+  --color-primary: #0052FF;
+  --color-primary-hover: #0041CC;
+  --color-primary-light: rgba(0, 82, 255, 0.08);
+  --color-secondary: #0A192F;
+  --color-accent: #00F2FE;
+  
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #0052FF 0%, #00B2FF 100%);
+  --grad-accent: linear-gradient(135deg, #00F2FE 0%, #4FACFE 100%);
+  --grad-dark: linear-gradient(135deg, #0A192F 0%, #020617 100%);
+  --grad-soft: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+
+  /* Neutrals */
+  --bg-pure: #FFFFFF;
+  --bg-alt: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --border-color: #E2E8F0;
+  --border-light: #F1F5F9;
+  
+  --text-main: #0F172A;
+  --text-body: #475569;
+  --text-light: #94A3B8;
+  --text-white: #FFFFFF;
+
+  /* Typography */
+  --font-title: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 10px 25px -10px rgba(0, 82, 255, 0.05);
+  --shadow-lg: 0 20px 40px -15px rgba(15, 23, 42, 0.06);
+  --shadow-hover: 0 30px 60px -20px rgba(0, 82, 255, 0.12);
+  --shadow-nav: 0 4px 30px rgba(15, 23, 42, 0.03);
+
+  /* Spacing */
+  --section-padding: 7.5rem 1.5rem;
+  --section-padding-mobile: 4.5rem 1rem;
+  --container-width: 1200px;
+  
+  /* Utilities */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}

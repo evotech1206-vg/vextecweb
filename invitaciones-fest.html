@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="VEXTEC - Invitaciones Fest. Diseñamos invitaciones digitales inteligentes y personalizadas. RSVP interactivo, ubicación GPS, música y fotos para bodas, cumpleaños y eventos.">
+  <meta name="keywords"
+    content="VEXTEC, invitaciones fest, invitaciones digitales, bodas, cumpleaños, eventos corporativos, confirmacion rsvp, invitaciones interactivas">
+  <meta name="author" content="VEXTEC">
+  <meta name="robots" content="index, follow">
+  <title>VEXTEC | Invitaciones Fest - Invitaciones Digitales Interactivas</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.vextec.com/invitaciones-fest.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vextec.com/invitaciones-fest.html">
+  <meta property="og:title" content="VEXTEC | Invitaciones Fest - Invitaciones Digitales Interactivas">
+  <meta property="og:description"
+    content="Diseñamos invitaciones digitales inteligentes y personalizadas. RSVP interactivo, ubicación GPS, música y fotos para bodas, cumpleaños y eventos.">
+  <meta property="og:image" content="https://www.vextec.com/assets/images/og-image.jpg">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/invitaciones.css">
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='32' rx='8' fill='%23030712'/%3E%3Cpath d='M10 6L22 16L10 26' stroke='%230052FF' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       1. FIXED HEADER NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <!-- VEXTEC Logo -->
+      <a href="index.html#inicio" class="logo" id="headerLogo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 6L22 16L10 26" stroke="#0052FF" stroke-width="6.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="logo-text"><span class="logo-vex"
+            style="color: var(--text-main); transition: var(--transition-smooth);">VEX</span><span class="logo-tec"
+            style="color: var(--color-primary);">TEC</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="index.html#videos" class="nav-link">Videos</a></li>
+          <li><a href="#" class="nav-link active">Invitaciones Fest</a></li>
+          <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+          <!-- Mobile-only CTA -->
+          <li class="mobile-cta-li" style="margin-top: 1rem; width: 100%; display: none;">
+            <a href="#cotizar-fest" class="btn btn-primary" style="display: flex; width: 100%;">Solicitar Cotización</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Call to Action -->
+      <div class="header-cta">
+        <a href="#cotizar-fest" class="btn btn-primary" id="btnRequestQuote">Solicitar Cotización</a>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="burger-menu" id="burgerMenu" aria-label="Abrir menú de navegación" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT LANDMARK
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- ==========================================================================
+       2. HERO SECTION INVITACIONES FEST
+       ========================================================================== -->
+    <section class="hero-invitaciones">
+      <div class="container">
+        <div class="hero-invitaciones-content">
+          <div class="hero-badge">
+            <span class="pulse"></span>
+            Nuevo Servicio Premium
+          </div>
+          <h1 class="hero-title">
+            Invitaciones Fest<br><span>para tus mejores eventos</span>
+          </h1>
+          <p class="hero-subtitle">
+            Crea la invitación digital definitiva para tu celebración. Un diseño interactivo premium con confirmación de asistencia en tiempo real, mapas GPS integrados, música de fondo y fotos del anfitrión.
+          </p>
+          <div class="hero-actions">
+            <a href="#temas" class="btn btn-primary">Ver Estilos Disponibles</a>
+            <a href="#cotizar-fest" class="btn btn-secondary">Cotizar Invitación</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="floating-illustration">
+            <svg viewBox="0 0 500 450" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="filter: drop-shadow(0 20px 40px rgba(0, 82, 255, 0.08));">
+              <!-- Background Card -->
+              <rect x="30" y="40" width="440" height="340" rx="20" fill="white" stroke="#E2E8F0" stroke-width="2" />
+              <!-- Mock Interface Frame -->
+              <rect x="30" y="40" width="440" height="40" rx="20" fill="#F8FAFC" />
+              <rect x="30" y="60" width="440" height="20" fill="#F8FAFC" />
+              <circle cx="55" cy="60" r="6" fill="#FF5F56" />
+              <circle cx="75" cy="60" r="6" fill="#FFBD2E" />
+              <circle cx="95" cy="60" r="6" fill="#27C93F" />
+              <line x1="30" y1="80" x2="470" y2="80" stroke="#E2E8F0" stroke-width="1" />
+
+              <!-- Left Side - Platform stats preview -->
+              <rect x="50" y="105" width="170" height="110" rx="12" fill="#0A192F" />
+              <text x="70" y="135" fill="#FFFFFF" font-family="Inter" font-weight="bold" font-size="14">Respuestas RSVP</text>
+              <text x="70" y="175" fill="#00F2FE" font-family="Poppins" font-weight="bold" font-size="28">92%</text>
+              <text x="70" y="195" fill="#94A3B8" font-family="Inter" font-size="10">Confirmaciones Automáticas</text>
+
+              <!-- Right Side - Interactive map view icon -->
+              <rect x="240" y="105" width="210" height="110" rx="12" fill="white" stroke="#F1F5F9" stroke-width="2" />
+              <circle cx="345" cy="160" r="28" fill="#0052FF" opacity="0.1" />
+              <path d="M345 145c-8.3 0-15 6.7-15 15 0 12 15 25 15 25s15-13 15-25c0-8.3-6.7-15-15-15zm0 20a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" fill="#0052FF" />
+              <text x="345" y="200" text-anchor="middle" font-family="Inter" font-weight="600" font-size="11" fill="#475569">Ubicación GPS por Waze & Google</text>
+
+              <!-- Bottom - Template preview mockup list -->
+              <rect x="50" y="235" width="400" height="125" rx="12" fill="white" stroke="#F1F5F9" stroke-width="2" />
+              <rect x="70" y="255" width="100" height="10" rx="5" fill="#475569" />
+              <rect x="70" y="275" width="220" height="6" rx="3" fill="#94A3B8" />
+              <rect x="70" y="287" width="180" height="6" rx="3" fill="#94A3B8" />
+
+              <g style="filter: drop-shadow(0 4px 10px rgba(0,82,255,0.15));">
+                <rect x="310" y="255" width="120" height="85" rx="8" fill="#0052FF" />
+                <text x="370" y="295" text-anchor="middle" fill="#FFFFFF" font-family="Poppins" font-weight="bold" font-size="12">Sara & Daniel</text>
+                <text x="370" y="315" text-anchor="middle" fill="#FFFFFF" opacity="0.8" font-family="Inter" font-size="8">Ver Invitación</text>
+              </g>
+            </svg>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       3. CARACTERÍSTICAS DE LAS INVITACIONES
+       ========================================================================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">Interactividad Total</span>
+          <h2 class="section-title">Todo lo que ofrece tu invitación digital</h2>
+          <p class="section-subtitle">Diseñadas para facilitar la organización de tu evento y encantar a tus invitados desde el primer momento.</p>
+        </header>
+
+        <div class="features-invitaciones-grid">
+          <!-- RSVP -->
+          <article class="feature-invitaciones-card">
+            <div class="feature-invitaciones-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <h3 class="feature-invitaciones-title">Confirmación RSVP</h3>
+            <p class="feature-invitaciones-desc">
+              Tus invitados confirman su asistencia con un clic. Los datos se envían a tu WhatsApp o se registran en una planilla en tiempo real.
+            </p>
+          </article>
+
+          <!-- GPS -->
+          <article class="feature-invitaciones-card">
+            <div class="feature-invitaciones-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3 class="feature-invitaciones-title">Ubicación GPS Integrada</h3>
+            <p class="feature-invitaciones-desc">
+              Tus invitados podrán trazar su ruta sin complicaciones con enlaces directos a Google Maps y Waze.
+            </p>
+          </article>
+
+          <!-- Música -->
+          <article class="feature-invitaciones-card">
+            <div class="feature-invitaciones-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+              </svg>
+            </div>
+            <h3 class="feature-invitaciones-title">Música de Fondo</h3>
+            <p class="feature-invitaciones-desc">
+              Ambienta la invitación con tu canción especial de fondo que comenzará a sonar al momento de abrir la invitación digital.
+            </p>
+          </article>
+
+          <!-- Regalos -->
+          <article class="feature-invitaciones-card">
+            <div class="feature-invitaciones-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <h3 class="feature-invitaciones-title">Mesa de Regalos</h3>
+            <p class="feature-invitaciones-desc">
+              Añade tus números de cuenta bancaria, enlaces de tiendas o información para la lluvia de sobres de manera discreta y elegante.
+            </p>
+          </article>
+
+          <!-- Galería -->
+          <article class="feature-invitaciones-card">
+            <div class="feature-invitaciones-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <h3 class="feature-invitaciones-title">Galería de Fotos</h3>
+            <p class="feature-invitaciones-desc">
+              Muestra las fotos de tu sesión pre-boda o comparte un collage del anfitrión del evento para hacerlo aún más íntimo.
+            </p>
+          </article>
+
+          <!-- Vestimenta -->
+          <article class="feature-invitaciones-card">
+            <div class="feature-invitaciones-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                <line x1="7" y1="7" x2="7.01" y2="7" />
+              </svg>
+            </div>
+            <h3 class="feature-invitaciones-title">Código de Vestimenta</h3>
+            <p class="feature-invitaciones-desc">
+              Facilita a tus invitados la etiqueta de vestuario sugerida (formal, casual, sport elegante, temática de color) de forma gráfica.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       4. INTERACTIVE THEMES / TEMPLATES DEMO
+       ========================================================================== -->
+    <section class="themes-section" id="temas">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">Modelos Temáticos</span>
+          <h2 class="section-title">Elige el estilo perfecto</h2>
+          <p class="section-subtitle">Contamos con diferentes temáticas interactivas que puedes personalizar a tu gusto.</p>
+        </header>
+
+        <!-- Tabs selectors -->
+        <div class="themes-tabs">
+          <button class="theme-tab-btn active" data-theme="wedding">Boda Premium</button>
+          <button class="theme-tab-btn" data-theme="birthday">Cumpleaños Moderno</button>
+          <button class="theme-tab-btn" data-theme="corporate">Eventos Corporativos</button>
+        </div>
+
+        <!-- Displays container -->
+        <div class="themes-display-container">
+          <!-- Smartphone Mockup Viewer -->
+          <div class="theme-preview-phone">
+            <div class="theme-preview-mockup">
+              <!-- Wedding Screen -->
+              <div class="template-screen temp-wedding active">
+                <div class="floral-header">✻</div>
+                <h4>Sara & Daniel</h4>
+                <p style="font-style: italic; font-size: 0.75rem;">¡Nos Casamos!</p>
+                <p style="margin-top: 1.5rem; font-weight: 500;">08.10.2026</p>
+                <button class="temp-btn" disabled>Confirmar Asistencia</button>
+              </div>
+
+              <!-- Birthday Screen -->
+              <div class="template-screen temp-birthday">
+                <h4 style="font-family: 'Poppins', sans-serif;">MIS 30 AÑOS</h4>
+                <p style="font-weight: bold; margin-top: 1rem; color: #00F2FE;">JULIA'S PARTY</p>
+                <p style="margin-top: 1rem;">15.11.2026</p>
+                <button class="temp-btn" disabled>Reservar Mi Copa</button>
+              </div>
+
+              <!-- Corporate Screen -->
+              <div class="template-screen temp-corporate">
+                <h4 style="font-family: 'Poppins', sans-serif;">TECH SUMMIT</h4>
+                <p style="font-weight: 600; color: #475569;">Vextec Solutions</p>
+                <p style="margin-top: 1rem;">02.12.2026</p>
+                <button class="temp-btn" disabled>Obtener Entrada QR</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Info Details Panel -->
+          <div class="theme-info-panel">
+            <h3 class="section-title" id="selectedThemeTitle" style="font-size: 1.8rem; margin-bottom: 1rem;">Modelo Bodas Premium</h3>
+            <p class="section-subtitle" id="selectedThemeDesc" style="font-size: 1rem; line-height: 1.6;">
+              Elegancia y distinción para el día más importante de tu vida. Colores sobrios, tipografía clásica y detalles artísticos.
+            </p>
+            <ul class="theme-features-list" id="selectedThemeFeatures">
+              <li style="display: flex; align-items: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 18px; height: 18px; color: #10B981; margin-right: 0.75rem;">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Confirmación RSVP directa a WhatsApp y base de datos</span>
+              </li>
+              <li style="display: flex; align-items: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 18px; height: 18px; color: #10B981; margin-right: 0.75rem;">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Cuenta regresiva en tiempo real</span>
+              </li>
+              <li style="display: flex; align-items: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 18px; height: 18px; color: #10B981; margin-right: 0.75rem;">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Sección interactiva para Mesa de Regalos / Lluvia de Sobres</span>
+              </li>
+              <li style="display: flex; align-items: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 18px; height: 18px; color: #10B981; margin-right: 0.75rem;">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Música de fondo elegida por los novios</span>
+              </li>
+              <li style="display: flex; align-items: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 18px; height: 18px; color: #10B981; margin-right: 0.75rem;">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Mapa dinámico con navegación directa a Google Maps/Waze</span>
+              </li>
+            </ul>
+            <a href="#cotizar-fest" class="btn btn-primary">Personalizar este modelo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       5. DEDICATED EVENT QUOTATION FORM SECTION
+       ========================================================================== -->
+    <section class="section" id="cotizar-fest">
+      <div class="container" style="max-width: 900px;">
+        <header class="section-header">
+          <span class="section-badge">Cotización Independiente</span>
+          <h2 class="section-title">Cotiza tu Invitación Fest</h2>
+          <p class="section-subtitle">Completa los detalles de tu celebración y diseñemos la invitación perfecta para tus invitados.</p>
+        </header>
+
+        <!-- Form layout using styling aligned to Vextet SaaS forms -->
+        <div class="contact-form-panel">
+          <form id="invForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="invName" class="form-label">Nombre Completo *</label>
+                <input type="text" id="invName" class="form-input" placeholder="Tu nombre y apellido" required>
+                <span class="field-error-msg" id="invNameError">El nombre debe tener al menos 3 caracteres (solo letras).</span>
+              </div>
+              <div class="form-group">
+                <label for="invEmail" class="form-label">Correo Electrónico *</label>
+                <input type="email" id="invEmail" class="form-input" placeholder="ejemplo@correo.com" required>
+                <span class="field-error-msg" id="invEmailError">Ingresa un correo electrónico con formato válido.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="invEventType" class="form-label">Tipo de Evento *</label>
+                <select id="invEventType" class="form-input" style="height: 57px; appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23475569%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><polyline points=%226 9 12 15 18 9%22/></svg>'); background-repeat: no-repeat; background-position: right 1.2rem center;" required>
+                  <option value="" disabled selected>Selecciona tu tipo de evento</option>
+                  <option value="wedding">Boda / Matrimonio</option>
+                  <option value="birthday">Cumpleaños / Fiesta</option>
+                  <option value="corporate">Evento Corporativo</option>
+                  <option value="anniversary">Aniversario</option>
+                  <option value="other">Otro tipo de celebración</option>
+                </select>
+                <span class="field-error-msg" id="invEventTypeError">Por favor selecciona una categoría de evento.</span>
+              </div>
+              <div class="form-row" style="gap: 1rem;">
+                <div class="form-group">
+                  <label for="invDate" class="form-label">Fecha del Evento</label>
+                  <input type="date" id="invDate" class="form-input" style="height: 57px;" required>
+                  <span class="field-error-msg" id="invDateError">Selecciona una fecha válida.</span>
+                </div>
+                <div class="form-group">
+                  <label for="invGuests" class="form-label">Nro. de Invitados *</label>
+                  <input type="number" id="invGuests" class="form-input" min="1" placeholder="Ej. 150" required>
+                  <span class="field-error-msg" id="invGuestsError">Ingresa un número válido de invitados (mínimo 1).</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="invMessage" class="form-label">Detalles del Evento o Comentarios Especiales *</label>
+              <textarea id="invMessage" class="form-input" placeholder="Cuéntanos sobre los colores, temática o cualquier detalle que te gustaría incorporar..." required></textarea>
+              <span class="field-error-msg" id="invMessageError">Ingresa los detalles de tu evento (mínimo 10 caracteres).</span>
+            </div>
+
+            <button type="submit" class="form-submit-btn" id="btnSubmitInvForm">
+              Enviar Solicitud de Cotización
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+
+            <!-- Success Alert Feedbacks container -->
+            <div id="invFormFeedback" class="form-feedback"></div>
+          </form>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <p style="font-size: 0.95rem; color: var(--text-body); margin-bottom: 1rem;">¿Prefieres cotizar de forma directa por chat?</p>
+          <a href="https://wa.me/51942010701?text=Hola%20VEXTEC%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n%20para%20una%20Invitaci%C3%B3n%20Fest."
+            target="_blank" class="whatsapp-widget" id="whatsappDirectBtn">
+            <!-- Inline WhatsApp SVG Icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.739-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.53 1.982 14.062.96 11.435.96 6.002.96 1.577 5.33 1.574 10.762c-.001 1.71.452 3.376 1.312 4.844l-.995 3.635 3.756-.987zM17.56 14.24c-.314-.157-1.858-.915-2.137-1.016-.279-.101-.482-.151-.684.152-.202.304-.785.987-.962 1.189-.177.202-.354.228-.668.071-1.077-.539-1.815-.993-2.544-1.245-.615-.213-1.054-.157-1.408.356-.379.547-.785.987-.962 1.189-.177.202-.354.228-.668.071-.314-.157-1.326-.49-2.524-1.559-.933-.833-1.563-1.862-1.746-2.176-.183-.314-.02-.485.137-.641.141-.141.314-.367.471-.55.157-.183.21-.314.314-.523.104-.21.052-.393-.026-.55-.078-.157-.684-1.648-.937-2.257-.247-.59-.498-.51-.684-.52-.177-.008-.38-.01-.582-.01-.202 0-.532.076-.81.38-.279.304-1.064 1.039-1.064 2.535s1.089 2.943 1.241 3.146c.152.202 2.144 3.273 5.193 4.588.725.313 1.291.5 1.732.64.729.232 1.391.2 1.916.122.585-.088 1.858-.76 2.124-1.456.266-.696.266-1.291.187-1.418-.079-.127-.279-.203-.59-.36z" />
+            </svg>
+            Cotizar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       6. FOOTER SECTION
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <!-- Logo VEXTEC -->
+        <a href="index.html#inicio" class="footer-logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M10 6L22 16L10 26" stroke="#0052FF" stroke-width="6.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="logo-text"><span style="color: #FFFFFF;">VEX</span><span
+              style="color: var(--color-primary);">TEC</span></span>
+        </a>
+        <p class="footer-desc">
+          Líderes en el diseño y desarrollo de soluciones digitales que impulsan la productividad de las empresas
+          modernas.
+        </p>
+        <!-- Social Networks Links -->
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Visitar Facebook de Vextec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Visitar Twitter / X de Vextec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Visitar LinkedIn de Vextec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Column 1 -->
+      <nav class="footer-nav" aria-label="Enlaces de la empresa">
+        <h4 class="footer-title">Empresa</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#inicio" class="footer-link">Inicio</a></li>
+          <li><a href="index.html#servicios" class="footer-link">Servicios</a></li>
+          <li><a href="index.html#proyectos" class="footer-link">Casos de Éxito</a></li>
+        </ul>
+      </nav>
+
+      <!-- Links Column 2 -->
+      <nav class="footer-nav" aria-label="Nuestras soluciones">
+        <h4 class="footer-title">Soluciones</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#servicios" class="footer-link">Desarrollo de Software</a></li>
+          <li><a href="index.html#servicios" class="footer-link">Diseño y Publicidad</a></li>
+          <li><a href="index.html#servicios" class="footer-link">Branding y Logotipos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Links Column 3 -->
+      <nav class="footer-nav" aria-label="Enlaces de soporte técnico">
+        <h4 class="footer-title">Soporte</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#contacto" class="footer-link">Contacto Directo</a></li>
+          <li><a href="index.html#videos" class="footer-link">Tutoriales y Videos</a></li>
+          <li><a href="https://wa.me/51942010701" target="_blank" class="footer-link">Soporte por WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Copyright and Policies sub-footer -->
+    <div class="container">
+      <div class="footer-bottom">
+        <small class="footer-copy">&copy; 2026 VEXTEC. Todos los derechos reservados. Tecnología que impulsa
+          soluciones.</small>
+        <nav class="footer-policies" aria-label="Políticas y condiciones de uso">
+          <a href="#" class="footer-policy-link">Términos de Servicio</a>
+          <a href="#" class="footer-policy-link">Política de Privacidad</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       7. CORNER FLOATING WHATSAPP BUTTON
+       ========================================================================== -->
+  <a href="https://wa.me/51942010701?text=Hola%20VEXTEC%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n%20para%20una%20Invitaci%C3%B3n%20Fest."
+    target="_blank" class="whatsapp-floating" id="whatsappFloatingBtn" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.739-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.53 1.982 14.062.96 11.435.96 6.002.96 1.577 5.33 1.574 10.762c-.001 1.71.452 3.376 1.312 4.844l-.995 3.635 3.756-.987zM17.56 14.24c-.314-.157-1.858-.915-2.137-1.016-.279-.101-.482-.151-.684.152-.202.304-.785.987-.962 1.189-.177.202-.354.228-.668.071-1.077-.539-1.815-.993-2.544-1.245-.615-.213-1.054-.157-1.408.356-.379.547-.785.987-.962 1.189-.177.202-.354.228-.668.071-.314-.157-1.326-.49-2.524-1.559-.933-.833-1.563-1.862-1.746-2.176-.183-.314-.02-.485.137-.641.141-.141.314-.367.471-.55.157-.183.21-.314.314-.523.104-.21.052-.393-.026-.55-.078-.157-.684-1.648-.937-2.257-.247-.59-.498-.51-.684-.52-.177-.008-.38-.01-.582-.01-.202 0-.532.076-.81.38-.279.304-1.064 1.039-1.064 2.535s1.089 2.943 1.241 3.146c.152.202 2.144 3.273 5.193 4.588.725.313 1.291.5 1.732.64.729.232 1.391.2 1.916.122.585-.088 1.858-.76 2.124-1.456.266-.696.266-1.291.187-1.418-.079-.127-.279-.203-.59-.36z" />
+    </svg>
+  </a>
+
+  <!-- JavaScript Behavior controllers -->
+  <script src="js/main.js"></script>
+  <script src="js/invitaciones.js"></script>
+</body>
+
+</html>

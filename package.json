@@ -1,0 +1,21 @@
+{
+  "name": "vextec-web",
+  "version": "1.0.0",
+  "description": "Fase 1 de la Landing Page premium de VEXTEC",
+  "main": "index.html",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"css/*.css, js/*.js, *.html\" --port 3000 --open"
+  },
+  "keywords": [
+    "vextec",
+    "landing",
+    "premium",
+    "tech",
+    "saas"
+  ],
+  "author": "VEXTEC UX/UI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}

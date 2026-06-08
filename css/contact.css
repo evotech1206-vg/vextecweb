@@ -1,0 +1,311 @@
+/* ==========================================================================
+   VEXTEC CONTACT SECTION & FORM VALIDATIONS
+   ========================================================================== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition-smooth);
+}
+
+.contact-grid.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-desc {
+  font-size: 1rem;
+  color: var(--text-body);
+  margin-bottom: 2.5rem;
+}
+
+.contact-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  font-style: normal; /* Address elements default to italic; reset this to normal */
+}
+
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact-item-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-item-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-item-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.contact-item-content p {
+  font-size: 0.9rem;
+  color: var(--text-body);
+}
+
+.contact-item-content p a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* WhatsApp Floating & Embedded Button */
+.whatsapp-widget {
+  background-color: #25D366;
+  color: var(--text-white);
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+  transition: var(--transition-smooth);
+}
+
+.whatsapp-widget:hover {
+  background-color: #20BA5A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-widget svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-floating {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  color: var(--text-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.35);
+  z-index: 999;
+  transition: var(--transition-smooth);
+}
+
+.whatsapp-floating:hover {
+  transform: scale(1.1) rotate(8deg);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-floating svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+/* Elegant SaaS Form styling */
+.contact-form-panel {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-alt);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--bg-pure);
+  box-shadow: 0 0 0 4px rgba(0, 82, 255, 0.1);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Validation Visual Feedbacks */
+.form-input.is-valid {
+  border-color: #10B981 !important;
+  background-color: rgba(16, 185, 129, 0.02) !important;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1) !important;
+}
+
+.form-input.is-invalid {
+  border-color: #EF4444 !important;
+  background-color: rgba(239, 68, 68, 0.02) !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1) !important;
+}
+
+/* Accessible Validation Alert Text under field */
+.field-error-msg {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #EF4444;
+  margin-top: 0.35rem;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: var(--transition-fast);
+  pointer-events: none;
+}
+
+.field-error-msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button & form feedback styling */
+.form-submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: var(--grad-primary);
+  color: var(--text-white);
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 82, 255, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition-smooth);
+}
+
+.form-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 82, 255, 0.3);
+}
+
+.form-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-submit-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: var(--transition-fast);
+}
+
+.form-submit-btn:hover:not(:disabled) svg {
+  transform: translateX(4px);
+}
+
+/* Form success message */
+.form-feedback {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: none;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.form-feedback.success {
+  display: block;
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #065F46;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.form-feedback.error {
+  display: block;
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #991B1B;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsiveness for contact form */
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-panel {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
