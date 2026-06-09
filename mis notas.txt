@@ -1,0 +1,17 @@
+GIT STATUS
+Verifica el estado del proyecto.
+
+GIT ADD .
+Prepara archivos para el commit.
+
+GIT COMMIT -m "mensaje"
+Toma una fotografía del proyecto.
+
+GIT PUSH
+Sube los cambios a GitHub.
+
+MAIN
+Rama principal.
+
+ORIGIN
+Repositorio remoto en GitHub.
